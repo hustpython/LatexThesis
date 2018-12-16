@@ -1,0 +1,15 @@
+\documentclass[a4paper, punct,space,nospace, fancyhdr, fntef,UTF8]{ctexart}
+
+\usepackage{hustthesis}%在这里放置需要的宏包，并设置部分所需内容
+\begin{document}
+    \pagestyle{empty}%不要页眉页脚
+    \include{data/cover} 
+    \include{data/encover}
+    \include{data/statement}
+	\zihao{-4}
+	{
+    \pagestyle{fancy}
+	\include{data/cnabstract}
+	\include{data/contents}
+	}
+\end{document}
