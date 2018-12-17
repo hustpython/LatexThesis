@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+
+\bibitem{rendle2009bpr}
+Steffen Rendle, Christoph Freudenthaler, Zeno Gantner, and Lars Schmidt-Thieme.
+\newblock Bpr: Bayesian personalized ranking from implicit feedback.
+\newblock In {\em Proceedings of the twenty-fifth conference on uncertainty in
+  artificial intelligence}, pages 452--461. AUAI Press, 2009.
+
+\end{thebibliography}

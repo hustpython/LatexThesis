@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: data/cover.aux
+A level-1 auxiliary file: data/encover.aux
+A level-1 auxiliary file: data/statement.aux
+A level-1 auxiliary file: data/cnabstract.aux
+A level-1 auxiliary file: data/enabstract.aux
+A level-1 auxiliary file: data/chapter1.aux
+A level-1 auxiliary file: data/chapter2.aux
+A level-1 auxiliary file: data/chapter3.aux
+A level-1 auxiliary file: data/chapter4.aux
+A level-1 auxiliary file: data/chapter5.aux
+A level-1 auxiliary file: data/acknowledgement.aux
+A level-1 auxiliary file: data/refs.aux
+The style file: plain.bst
+Database file #1: data/refs.bib
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            516 strings with 4461 characters,
+and the built_in function-call counts, 547 in all, are:
+= -- 56
+> -- 23
+< -- 1
++ -- 9
+- -- 8
+* -- 36
+:= -- 85
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 7
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 23
+empty$ -- 42
+format.name$ -- 8
+if$ -- 122
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 10
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 37
+swap$ -- 11
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 5
+width$ -- 2
+write$ -- 14
