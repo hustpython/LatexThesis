@@ -19,15 +19,15 @@
 
 ### 封面内容：
 
-- [中文封面 data\cover.tex](data\cover.tex)
+- [中文封面 data\cover.tex](.\data\cover.tex)
 
-- [英文封面 data\encover.tex](data\encover.tex)
+- [英文封面 data\encover.tex](.\data\encover.tex)
 
-- [声明 data\statement.tex](data\statement.tex)
+- [声明 data\statement.tex](.\data\statement.tex)
 
 ### 摘要:
 
-- [中文摘要 data\cnabstract.tex](data\cnabstract.tex)
+- [中文摘要 data\cnabstract.tex](.\data\cnabstract.tex)
 
 
-- [英文摘要 data\cnabstract.tex](data\enabstract.tex)
+- [英文摘要 data\enabstract.tex](.\data\enabstract.tex)
