@@ -1,15 +1,35 @@
 \documentclass[a4paper, punct,space,nospace, fancyhdr, fntef,UTF8]{ctexart}
 
-\usepackage{hustthesis}%在这里放置需要的宏包，并设置部分所需内容
+\usepackage{hustthesis}                                   % 导入格式设置文件
+
 \begin{document}
-    \pagestyle{empty}%不要页眉页脚
-    \include{data/cover} 
-    \include{data/encover}
-    \include{data/statement}
-	\zihao{-4}
-	{
-    \pagestyle{fancy}
-	\include{data/cnabstract}
-	\include{data/contents}
-	}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \pagestyle{empty}                                     % 前三页不要页眉页脚  
+    \newgeometry{top=2.5cm}                               % 将上页距变小
+    \include{data/cover}  
+    \include{data/encover}                                % 中文封面
+    \include{data/statement}                              % 英文封面
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \pagestyle{fancy}                                      % 开始有页眉和页脚
+    \restoregeometry                                       % 恢复正常页面大小    
+    \pagenumbering{Roman}                                  % 页脚编码罗马数字 
+    \include{data/cnabstract}                              % 中文摘要
+    \include{data/enabstract}                              % 英文摘要
+    \tableofcontents                                       % 目录
+    \addcontentsline{toc}{section}{目 \ 录}                 % 可以选择不添加目录中
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \pagebreak                                             % 中断罗马数字页码
+    \pagenumbering{arabic}                                 % 开始阿拉伯数字页码
+    \include{data/chapter1}                                % 第一章内容
+    \include{data/chapter2}                                % 第二章内容
+    \include{data/chapter3}                                % 第三章内容
+    \include{data/chapter4}                                % 第四章内容
+    \include{data/chapter5}                                % 第五章内容
+    \include{data/acknowledgement}                         % 致谢
+    \include{data/refs}                                                       % 参考文献
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}

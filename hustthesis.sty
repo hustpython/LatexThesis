@@ -1,74 +1,108 @@
-\ProvidesPackage{hustthesis}  
-\usepackage[headheight=30pt,top=2cm,bottom=2.5cm,left=2.8cm,right=2.8cm,includehead,includefoot]{geometry} 
-\usepackage{booktabs}% 标签
-\usepackage[namelimits]{amsmath}%数学公式
-\usepackage{amssymb}
-\usepackage{amsfonts}%数学公式
-\usepackage[dvips]{graphicx}%图片包
-\usepackage{color}%
-\usepackage[super,square,compress,sort]{natbib}%参考文献样式
-\usepackage[linesnumbered,boxed,ruled,commentsnumbered]{algorithm2e}%%算法
-\usepackage{float}
-\usepackage{setspace}%调整行间距
-\usepackage[font=small]{caption}%caption字体设置小一号
-\usepackage{makecell}%改变表格横线样式， Xhline;Xcline
-\usepackage{url}
-\usepackage{mathrsfs}%数学花体
-\usepackage{ragged2e} %设置两端对齐，也没起作用
-\usepackage{tabularx} 
-\usepackage{fontenc}
-\usepackage{bbding}
-\usepackage{pifont}
-\usepackage{wasysym}
-\usepackage{amssymb}
-% \usepackage{multicol} %设置分栏，好像没有用到
-%生成书签。同时不是使用方框标识，colorlinks使用颜色标识。如果不想使用颜色，可以改为black.
-%书签可有可无。不想用直接删除即可
-%colorlinks默认为false, 即使用方框区别链接。为true时使用颜色进行区别。
-\usepackage[colorlinks=true,
-linkcolor=black,
-anchorcolor=black,
-citecolor=black
-]{hyperref}
+% 导入包
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{hustthesis}                        %
+\usepackage[headheight=30pt,top=2.7cm,bottom=1.5cm, %
+            left=2.7cm,right=2.7cm,includehead,     %
+            includefoot]{geometry}                  %
+\usepackage{booktabs}                               % 标签
+\usepackage[namelimits]{amsmath}                    % 数学公式
+\usepackage{amssymb}                                %
+\usepackage{amsfonts}                               % 数学公式
+\usepackage[dvips]{graphicx}                        % 图片包
+\usepackage{color}                                  % 颜色
+\usepackage[super,square,compress,sort]{natbib}     % 参考文献样式
+\usepackage[linesnumbered,boxed,ruled,              %
+           commentsnumbered]                        %
+           {algorithm2e}                            % 算法
+\usepackage{float}                                  % 
+\usepackage{emptypage}                              % 去掉页面
+\usepackage{setspace}                               % 调整行间距
+\usepackage[font=small]{caption}                    % caption字体设置小一号
+\usepackage{fontspec, xunicode, xltxtra}            %
+\usepackage{xeCJK}                                  % 中文字体
+\defaultfontfeatures{Mapping=tex-text}              % 如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。
+\usepackage{makecell}                               % 改变表格横线样式， Xhline;Xcline
+\usepackage{url}                                    % 超链接
+\usepackage{mathrsfs}                               % 数学花体
+\usepackage{ragged2e}                               % 设置两端对齐，也没起作用
+\usepackage{tabularx}                               % 表格
+\usepackage{fontenc}                                % 字体
+\usepackage{bbding}                                 %
+\usepackage{pifont}                                 %
+\usepackage{wasysym}                                %
+\usepackage{amssymb}                                %
+\usepackage{shapepar}                               % 形状
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% 设置正文常用字体
-%\setmainfont{songti}
-%\setmainfont{Times New Roman}
-% 封面使用华文中宋
-\setCJKfamilyfont{lxk}{lxk.TTF}
-\newcommand{\lxk}{\CJKfamily{lxk}}
-\setCJKfamilyfont{hwzs}{STZhongsong}
-\newcommand{\huawenzhongsong}{\CJKfamily{hwzs}}
-\newfontfamily\hwzsAll{STZhongsong}[%
-	BoldFont={STZhongsong},
-	BoldFeatures={FakeBold=6}
-]
 
-%页眉页脚
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\lhead{} 
-\chead{\zihao{3}\kaishu\bfseries{华\ 中\ 科\ 技\ 大\ 学\ 硕\ 士\ 学\ 位\ 论\ 文}}  
-\rhead{} 
-\lfoot{} 
-\cfoot{}
-\rfoot{} 
-\renewcommand{\headrulewidth}{0.4pt} 
-\renewcommand{\headwidth}{\textwidth}
-\renewcommand{\footrulewidth}{0pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks=true,                        %
+linkcolor=black,                                    %
+anchorcolor=black,                                  % 设置书签
+citecolor=black                                     %
+]{hyperref}                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 字体设置
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                                                    
+\setmainfont{Times New Roman}{\zihao{-4}}                  %英文默认字体
+\setCJKmainfont{宋体}{\zihao{-4}}                          %中文默认字体为宋体，小四
+\setCJKfamilyfont{lxk}{lxk.TTF}                            % 导入本地字体
+\newcommand{\lxk}{\CJKfamily{lxk}}                         % 设置字体别名
+\setCJKfamilyfont{hwzs}[AutoFakeBold = {0.5}]{STZhongsong} % 封面使用华文中宋
+\newcommand{\huawenzhongsong}{\CJKfamily{hwzs}}            % 字体起别名
+\setstretch{1.8}                                           % 默认行间距1.8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 页眉页脚
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}                                                           %                                                        
+\pagestyle{fancy}                                                               %
+\lhead{}                                                                        %
+\chead{\zihao{3}\kaishu\bfseries{华\ 中\ 科\ 技\ 大\ 学\ 硕\ 士\ 学\ 位\ 论\ 文}}  %  
+\rhead{}                                                                        %
+\lfoot{}                                                                        %
+\cfoot{}                                                                        %
+\rfoot{}                                                                        %
+\renewcommand{\headrulewidth}{0.4pt}                                            % 页眉直线
+\renewcommand{\headwidth}{\textwidth}                                           % 
+\renewcommand{\footrulewidth}{0.4pt}                                            % 页脚直线
+\cfoot{\zihao{-4}\thepage}                                                      % 页码大小
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % 摘要样式
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Cnabstract}{                                                       % 设置摘要的标题大小
+    \section*{\centerline{\heiti\zihao{3}{\bfseries{摘~~~~要}}}}                %  目录中的样式
+    \addcontentsline{toc}{section}{摘 \ 要}                                     %  添加到目录中
+    \zihao{-4}{}}                                                               %
+\newcommand{\Cnkeywords}{                                                       %
+                                                                                %
+{\setlength{\parindent}{2em}{\zihao{-4} \heiti{\bfseries 关键词：}}              % 关键词样式
+}}                                                                              %
+                                                                                %
+\newcommand{\Enabstract}{                                                       %
+    \section*{\centerline{\heiti\zihao{3}{\bfseries{Abstract}}}}                %
+    \addcontentsline{toc}{section}{Abstract}                                    %
+    \zihao{-4}{}}                                                               %
+\newcommand{\Enkeywords}{                                                       %
+                                                                                %
+{\zihao{-4}\setlength{\parindent}{2em}{\zihao{-4} \bfseries{Keywords:}}         %
+}}                                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%目录样式
-\renewcommand{\contentsname}{\centerline{目\hspace{1em}录}}%目录居中
+% 目录样式
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\contentsname}{\heiti\zihao{3}\bfseries{目 \ 录}}%目录居中
 \usepackage{titletoc}
 \titlecontents{section}[0mm]
-{\fontsize{12pt}{20pt}\selectfont \CJKfamily{song}}
+{\zihao{3}\heiti}
 {\filleft\contentslabel{1em}}
 {\hspace*{-1em}} %保证摘要等对齐  contentslabel的距离与此处的hspace大小相等,正负相反,即可对齐
 {\titlerule*{.}\contentspage} %设置页面与标题之间的空隙填充
 
 \titlecontents{subsection}[10mm] %设置标题1样式
-{\fontsize{12pt}{20pt}\selectfont \CJKfamily{song}} %宋体12号
+{\zihao{4}\heiti} %黑体四号
 {\contentslabel{2em}}
 {\hspace*{-2em}}
 {\titlerule*{.}\contentspage}
@@ -79,18 +113,28 @@ citecolor=black
 {\hspace*{-3em}}
 {\titlerule*{.}\contentspage}
 
-%调整段间距，在原有基础上增大0.5em
-\addtolength{\parskip}{.5em}
+\CTEXsetup[format={\zihao{3}\heiti\centering}]{section}% 正文中标题设置
+\CTEXsetup[format={\zihao{4}\heiti}]{subsection}       % 正文小标题设置
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% 致谢样式
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Acknowledgment}{
+    \section*{\centerline{\heiti\zihao{3}{\bfseries{致~~~~谢}}}}
+    \addcontentsline{toc}{section}{致 \ 谢}
+    {}}
+
+\newcommand{\Refs}{
+    \section*{\centerline{\heiti\zihao{3}{\bfseries{参考文献}}}}
+    \addcontentsline{toc}{section}{参考文献}
+    {}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 其他设置
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\algorithmcfname}{算法}
-
 \DeclareGraphicsExtensions{.eps,.ps,.png,.jpg}%对于同名图片的优先顺序调用
 \graphicspath{{graphics/}}%设置图片路径为当前路径下的graphics文件夹
-
-
 \endinput
-
-
-
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
