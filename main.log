@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 16:46
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 22:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/latexcookbook/hustmasterthesis/main
-(d:/latexcookbook/hustmasterthesis/main.tex
+**d:/hustmasterthesis/main
+(d:/hustmasterthesis/main.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/ctex/ctexart.cls (c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -2598,13 +2598,13 @@ LaTeX Font Warning: Font shape `TU/KaiTi(0)/bx/n' undefined
 * 
 * Try to use `\setCJKfamilyfont{song}[...]{...}' to define it.
 *************************************************
-)
+[4
+
+])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [4
-
-] [5]
+ [5]
 \openout2 = `data/chapter1.aux'.
 
  (./data/chapter1.tex
@@ -2708,7 +2708,7 @@ Reformat paragraph with \rightskip= 0.00023pt plus 30.0pt minus 15.0pt.) [12]
  (./data/appendixcode.tex
 \openout3 = `main.pyg'.
 
- (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle) (./_minted-main/59507F9FDEE6305F58D438F9DFD3C1565BD9CFCE54A68914ACB2DCF71641ADB0.pygtex
+ (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle) (./_minted-main/5CDF9D857BE4E4DE0954977488C2FC1A5BD9CFCE54A68914ACB2DCF71641ADB0.pygtex
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12.045> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
 
@@ -2730,7 +2730,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E9EE9165D7C94145E47693285D72D2DB.
+(rerunfilecheck)             Checksum: C627FEB604E65F934963AC241D0862F4.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2746,12 +2746,12 @@ runsystem(del main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37688 strings out of 492970
- 721108 string characters out of 6137297
- 859539 words of memory out of 5000000
- 41001 multiletter control sequences out of 15000+600000
+ 37689 strings out of 492970
+ 721079 string characters out of 6137297
+ 859639 words of memory out of 5000000
+ 41002 multiletter control sequences out of 15000+600000
  553464 words of font info for 186 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 53i,12n,87p,10440b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,87p,10426b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (22 pages).

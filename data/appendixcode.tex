@@ -1,23 +1,25 @@
-\begin{appendix}
+\newpage
 
-    \section{数据库系统存储数据代码}
+% 将section清零
+\setcounter{section}{0}
+% 设置附录的标题
+\renewcommand{\myappendixname}{数据库系统存储数据代码1}
+\dnabstract
+\begin{minted}[breaklines,linenos,frame=single,numbersep=-15pt]{Python}
 
-    \begin{minted}[breaklines,linenos,frame=single,numbersep=20pt]{Python}
-
-def insertfile( self, dbname, category, user, pwd, targetfile, var_opti_name, HFSSfilename ,fre, varmatrixs, R):    
-    NewVarM = list()
-    temVarM = list()
-    for i in range(len(self.VarID)):
-        if self.VarID[i] != -1:
-            NewVarM.append(varmatrixs[self.VarID[i]])
-            temVarM.append(varmatrixs[self.VarID[i]])
-        else:
-            NewVarM.append(self.VarValue[i])
-    varsdict = dict(zip(self.VarList,NewVarM))
-    self.insertData2Table(dbname,user, pwd,targetfile,HFSSfilename,fre,self.tags,self.topos,\
-                self.thickness,var_opti_name, temVarM, varsdict,R, category)   
-     \end{minted}
-
-\end{appendix}
-
-        
+    def insertfile( self, dbname, category, user, pwd, targetfile, var_opti_name, HFSSfilename ,fre, varmatrixs, R):    
+        NewVarM = list()
+        temVarM = list()
+        for i in range(len(self.VarID)):
+            if self.VarID[i] != -1:
+                NewVarM.append(varmatrixs[self.VarID[i]])
+                temVarM.append(varmatrixs[self.VarID[i]])
+            else:
+                NewVarM.append(self.VarValue[i])
+        varsdict = dict(zip(self.VarList,NewVarM))
+        self.insertData2Table(dbname,user, pwd,targetfile,HFSSfilename,fre,self.tags,self.topos,\
+                    self.thickness,var_opti_name, temVarM, varsdict,R, category)   
+         \end{minted}
+% 设置新的标题
+\renewcommand{\myappendixname}{数据库系统存储数据代码2}
+\dnabstract   

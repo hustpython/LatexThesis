@@ -32,7 +32,7 @@
 \usepackage{wasysym}                                %
 \usepackage{amssymb}                                %
 \usepackage{shapepar}                               % 形状
-\usepackage{appendix}                               % 附录
+\usepackage[toc,page]{appendix}                               % 附录
 \usepackage{listings}                               % 代码列表
 \usepackage{xcolor}                                 % 颜色支持
 \usepackage{mdframed}                               % 配合minted 设置代码边框
@@ -150,6 +150,18 @@ citecolor=black                                     %
 \@addtoreset{figure}{section}
 \makeatother
 
+% 定义一个全局变量
+\def \myappendixname {}
+
+% 定义附录样式 附录+罗马数字。如：附录 I
+\newcommand{\dnabstract}{    
+    \refstepcounter{section}                                                    % 设置摘要的标题大小
+    \section*{\centerline{\heiti\zihao{3}{附录~\Roman{section}{~~\myappendixname}}}}                %  目录中的样式
+    \addcontentsline{toc}{section}{附录~\Roman{section}{~~\myappendixname}}                                     %  添加到目录中
+    \zihao{-4}{}}   
+
+
+% \renewcommand{\appendixname}{附 \ 录~\Roman{section}} % 不知道为什么没有起作用
 
 \captionsetup{labelformat=default,labelsep=space} %去除冒号
 \renewcommand{\algorithmcfname}{算法}
