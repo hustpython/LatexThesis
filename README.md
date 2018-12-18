@@ -1,90 +1,14 @@
 # Latex 创建华中科技大学硕士毕业论文
 
-## 环境配置
+## 使用说明
 
-软件:texlive 2018 + vscode 
+本论文模板是使用texLive2018 + VsCode 1.30 进行编写和编译，无法保证其他编译器能够运行。所有如果使用其他编译器有问题的情况下，请使用以上版本的软件。VsCode的环境配置参考[VsCode+texLive2018环境配置](VScodeconfig.md)
 
-1，vscode的颜色主题对代码高亮的支持的影响。
+## 模板介绍
 
+本模板参考了华中科技大学硕士毕业论文Word版本进行改写。
 
-2，文档和代码之间跳转功能的支持，需要编译过程中的临时文件的支持。
-
-    "latex-workshop.latex.clean.enabled":flase
-    
-
-3，latex preview 代码跳转快捷:ctrl + 双击。
-
-4，由于使用了参考文献，使用混合编译方式。具体设置如下:
-   
-   ```css
-
-  
-    "latex-workshop.latex.tools": [
-      {
-          "name": "latexmk",
-          "command": "latexmk",
-          "args": [
-              "-synctex=1",
-              "-interaction=nonstopmode",
-              "-file-line-error",
-              "-pdf",
-              "%DOC%"
-          ]
-      },
-      {
-          "name": "xelatex",
-          "command": "xelatex",
-          "args": [
-              "-synctex=1",
-              "-interaction=nonstopmode",
-              "-file-line-error",
-              "%DOC%"
-          ]
-      },
-      {
-          "name": "bibtex",
-          "command": "bibtex",
-          "args": [
-              "%DOCFILE%"
-          ]
-      },
-      {
-        "name": "xelatex",
-        "command": "xelatex",
-        "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "%DOC%"
-        ]
-    },
-    {
-        "name": "xelatex",
-        "command": "xelatex",
-        "args": [
-            "-synctex=1",
-            "-interaction=nonstopmode",
-            "-file-line-error",
-            "%DOC%"
-        ]
-    }
-  ],
-  "latex-workshop.latex.recipes": [
-      {
-          "name": "xelatex -> bibtex -> xelatex*2",
-          "tools": [
-              "xelatex",
-              "bibtex",
-              "xelatex",
-              "xelatex"
-          ]
-      }
-  ],
-   ```
-
-## 模板使用说明
-
-
+## 模板文件
 
 ### 封面：
 
@@ -127,4 +51,4 @@
 
 ### 代码附录 
 
-- [代码 data\appendixcode.tex](data\appendixcode.tex)
+- [代码 data\appendixcode.tex](data/appendixcode.tex)
