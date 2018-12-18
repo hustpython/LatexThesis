@@ -12,11 +12,14 @@
 
 3，latex preview 代码跳转快捷:ctrl + 双击。
 
-4，由于使用了参考文献，使用混合编译方式。具体设置如下:
+4，由于使用了参考文献和minted库，使用混合编译方式。具体设置如下:
    
+   编译顺序是: xlatex -> bibtex -> xlatex*2 
+
+   minted需要设置 -shell-escape
+
    ```css
 
-  
     "latex-workshop.latex.tools": [
       {
           "name": "latexmk",
@@ -25,6 +28,7 @@
               "-synctex=1",
               "-interaction=nonstopmode",
               "-file-line-error",
+              "-shell-escape",
               "-pdf",
               "%DOC%"
           ]
@@ -36,6 +40,7 @@
               "-synctex=1",
               "-interaction=nonstopmode",
               "-file-line-error",
+              "-shell-escape",
               "%DOC%"
           ]
       },
@@ -53,6 +58,7 @@
             "-synctex=1",
             "-interaction=nonstopmode",
             "-file-line-error",
+            "-shell-escape",
             "%DOC%"
         ]
     },
@@ -63,6 +69,7 @@
             "-synctex=1",
             "-interaction=nonstopmode",
             "-file-line-error",
+            "-shell-escape",
             "%DOC%"
         ]
     }
@@ -78,4 +85,5 @@
           ]
       }
   ],
+
    ```

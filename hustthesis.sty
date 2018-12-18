@@ -32,6 +32,10 @@
 \usepackage{wasysym}                                %
 \usepackage{amssymb}                                %
 \usepackage{shapepar}                               % 形状
+\usepackage{appendix}                               % 附录
+\usepackage{listings}                               % 代码列表
+\usepackage{xcolor}                                 % 颜色支持
+\usepackage{mdframed}                               % 配合minted 设置代码边框
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -145,6 +149,7 @@ citecolor=black                                     %
 \makeatletter
 \@addtoreset{figure}{section}
 \makeatother
+
 
 \captionsetup{labelformat=default,labelsep=space} %去除冒号
 \renewcommand{\algorithmcfname}{算法}
