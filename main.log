@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 22:35
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 22:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2122,7 +2122,7 @@ Package: xeCJK-listings 2018/04/07 v3.7.0 xeCJK patch file for listings
 
 LaTeX Warning: Label `gra4' multiply defined.
 
-) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux) (./data/appendixcode.aux))
+) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux) (./data/appendices.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -2703,9 +2703,9 @@ Reformat paragraph with \rightskip= 0.00023pt plus 30.0pt minus 15.0pt.) [12]
 
 
 ]
-\openout2 = `data/appendixcode.aux'.
+\openout2 = `data/appendices.aux'.
 
- (./data/appendixcode.tex
+ (./data/appendices.tex
 \openout3 = `main.pyg'.
 
  (./_minted-main/default-pyg-prefix.pygstyle) (./_minted-main/default.pygstyle) (./_minted-main/5CDF9D857BE4E4DE0954977488C2FC1A5BD9CFCE54A68914ACB2DCF71641ADB0.pygtex
@@ -2726,7 +2726,7 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.52061> not available
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
- (./main.aux (./data/cover.aux) (./data/encover.aux) (./data/statement.aux) (./data/cnabstract.aux) (./data/enabstract.aux) (./data/chapter1.aux) (./data/chapter2.aux) (./data/chapter3.aux) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux) (./data/appendixcode.aux))
+ (./main.aux (./data/cover.aux) (./data/encover.aux) (./data/statement.aux) (./data/cnabstract.aux) (./data/enabstract.aux) (./data/chapter1.aux) (./data/chapter2.aux) (./data/chapter3.aux) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux) (./data/appendices.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -2746,8 +2746,8 @@ runsystem(del main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37689 strings out of 492970
- 721079 string characters out of 6137297
+ 37688 strings out of 492970
+ 721053 string characters out of 6137297
  859639 words of memory out of 5000000
  41002 multiletter control sequences out of 15000+600000
  553464 words of font info for 186 fonts, out of 8000000 for 9000

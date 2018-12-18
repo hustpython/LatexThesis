@@ -2,7 +2,7 @@
 
 ## 使用说明
 
-本论文模板是使用texLive2018 + VsCode 1.30 进行编写和编译，无法保证其他编译器能够运行。所有如果使用其他编译器有问题的情况下，请使用以上版本的软件。VsCode的环境配置参考[VsCode+texLive2018环境配置](VScodeconfig.md)和[setting文件]()
+本论文模板是使用texLive2018 + VsCode 1.30 进行编写和编译，无法保证其他编译器能够运行。所有如果使用其他编译器有问题的情况下，请使用以上版本的软件。VsCode的环境配置参考[VsCode+texLive2018环境配置](VScodeconfig.md)和[setting文件](.vscode/settings.json)
 
 ## 模板介绍
 
@@ -49,6 +49,6 @@
 
 - [参考文献bib data\refs.bib](data/refs.bib)
 
-### 代码附录 
+### 附录 
 
-- [代码 data\appendixcode.tex](data/appendixcode.tex)
+- [代码 data\appendices.tex](data/appendices.tex)

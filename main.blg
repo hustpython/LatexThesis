@@ -14,11 +14,11 @@ A level-1 auxiliary file: data/chapter5.aux
 A level-1 auxiliary file: data/acknowledgement.aux
 A level-1 auxiliary file: data/refs.aux
 The style file: plain.bst
-A level-1 auxiliary file: data/appendixcode.aux
+A level-1 auxiliary file: data/appendices.aux
 Database file #1: data/refs.bib
 You've used 1 entry,
             2118 wiz_defined-function locations,
-            517 strings with 4482 characters,
+            517 strings with 4480 characters,
 and the built_in function-call counts, 547 in all, are:
 = -- 56
 > -- 23
