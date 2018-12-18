@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 01:29
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 11:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1761,7 +1761,11 @@ File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many o
 *** Reloading Xunicode for encoding 'TU' ***
 ) (c:/texlive/2018/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
 File: xunicode-extra.def 2018/04/07 v3.7.0 extra definition for xunicode
-) (./main.aux (./data/cover.aux) (./data/encover.aux) (./data/statement.aux) (./data/cnabstract.aux) (./data/enabstract.aux) (./data/chapter1.aux) (./data/chapter2.aux) (./data/chapter3.aux) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux))
+) (./main.aux (./data/cover.aux) (./data/encover.aux) (./data/statement.aux) (./data/cnabstract.aux) (./data/enabstract.aux) (./data/chapter1.aux) (./data/chapter2.aux) (./data/chapter3.aux
+
+LaTeX Warning: Label `gra4' multiply defined.
+
+) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -2232,6 +2236,13 @@ Overfull \hbox (0.61008pt too wide) detected at line 3
  \TU/TimesNewRoman(0)/m/n/16.06 IV
  []
 
+*************************************************
+* xeCJK warning: "CJKfamily-Unknown"
+* 
+* Unknown CJK family `song' is being ignored.
+* 
+* Try to use `\setCJKfamilyfont{song}[...]{...}' to define it.
+*************************************************
 )
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -2241,36 +2252,73 @@ Overfull \hbox (0.61008pt too wide) detected at line 3
 ]
 \openout2 = `data/chapter1.aux'.
 
- (./data/chapter1.tex) [1
+ (./data/chapter1.tex
+File: graphics/fssstructure.jpg Graphic file (type bmp)
+<graphics/fssstructure.jpg>
+File: graphics/fssstructure.jpg Graphic file (type bmp)
+<graphics/fssstructure.jpg>
+ [1
 
-]
+] [2] [3]
+\g__fontspec_family_FangSong_int=\count316
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FangSong/BI" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FangSong/B" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "FangSong/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FangSong(0)' created for font 'FangSong' with options
+. [Mapping=tex-text,Script={CJK}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"FangSong/OT:script=hani;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+) [4]
 \openout2 = `data/chapter2.aux'.
 
- (./data/chapter2.tex) [2
+ (./data/chapter2.tex) [5
 
 
 ]
 \openout2 = `data/chapter3.aux'.
 
- (./data/chapter3.tex) [3
+ (./data/chapter3.tex
+File: graphics/fssstructure.jpg Graphic file (type bmp)
+<graphics/fssstructure.jpg>
+) [6
 
 
-]
+] [7]
 \openout2 = `data/chapter4.aux'.
 
- (./data/chapter4.tex) [4
+ (./data/chapter4.tex) [8
 
 
 ]
 \openout2 = `data/chapter5.aux'.
 
- (./data/chapter5.tex [5
+ (./data/chapter5.tex [9
 
 
-]) [6]
+]) [10]
 \openout2 = `data/acknowledgement.aux'.
 
- (./data/acknowledgement.tex (0) Try shape with scale 13.61519pt.  (Delta = 0.0).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 14 lines (1) Try shape with scale 13.37587pt.  (Delta = -0.23932).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 14 lines (2) Try shape with scale 13.13655pt.  (Delta = -0.23932).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 16 lines (3) Try shape with scale 13.26338pt.  (Delta = 0.12683).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 15 lines Reformat paragraph with \rightskip= 0.0pt. [7
+ (./data/acknowledgement.tex (0) Try shape with scale 13.61519pt.  (Delta = 0.0).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 14 lines (1) Try shape with scale 13.37587pt.  (Delta = -0.23932).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 14 lines (2) Try shape with scale 13.13655pt.  (Delta = -0.23932).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 16 lines (3) Try shape with scale 13.26338pt.  (Delta = 0.12683).   . . . . . . . . . . . . . . . Formatting.  Expected 15 lines; got 15 lines Reformat paragraph with \rightskip= 0.0pt. [11
 
 
 ] (0) Try shape with scale 68.13516pt.  (Delta = 0.0).   . . . . . . . . . . . . . . . . . Formatting.  Expected 17 lines; got 13 lines (1) Try shape with scale 63.74365pt.  (Delta = -4.39151).   . . . . . . . . . . . . . . . . Formatting.  Expected 16 lines; got 17 lines (2) Try shape with scale 66.07114pt.  (Delta = 2.32748).   . . . . . . . . . . . . . . . . . Formatting.  Expected 17 lines; got 15 lines (3) Try shape with scale 64.81432pt.  (Delta = -1.25682).   . . . . . . . . . . . . . . . . . Formatting.  Expected 17 lines; got 15 lines (4) Try shape with scale 64.13565pt.  (Delta = -0.67867).   . . . . . . . . . . . . . . . . . Formatting.  Expected 17 lines; got 15 lines (5) Try shape with scale 63.76918pt.  (Delta = -0.36647).   . . . . . . . . . . . . . . . . . Formatting.  Expected 17 lines; got 15 lines (6) Try shape with scale 63.57129pt.  (Delta = -0.19789).   . . . . . . . . . . . . . . . . Formatting.  Expected 16 lines; got 17 lines (7) Try shape with scale 63.67616pt.  (Delta = 0.10487).   . . . . . . . . . . . . . . . . Formatting.  Expected 16 lines; got 17 lines (8) Try shape with scale 63.73174pt.  (Delta = 0.05557).   . . . . . . . . . . . . . . . . Formatting.  Expected 16 lines; got 17 lines (9) Try shape with scale 63.76118pt.  (Delta = 0.02945).   . . . . . . . . . . . . . . . . . Formatting.  Expected 17 lines; got 15 lines Reformat paragraph with \rightskip= 0.0pt.
@@ -2293,10 +2341,10 @@ Overfull \hbox (24571.89232pt too wide) in paragraph at lines 14--14
 []  
  []
 
-Reformat paragraph with \rightskip= 0.00023pt plus 30.0pt minus 15.0pt.) [8]
+Reformat paragraph with \rightskip= 0.00023pt plus 30.0pt minus 15.0pt.) [12]
 \openout2 = `data/refs.aux'.
 
- (./data/refs.tex (./main.bbl)) [9
+ (./data/refs.tex (./main.bbl)) [13
 
 
 ]
@@ -2306,7 +2354,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 189B8E3297BF6E72E4107DA9CE5D4B3F.
+(rerunfilecheck)             Checksum: 96F8646CF3EF0342DCEE196B3B7810E7.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2315,15 +2363,18 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 32167 strings out of 492970
- 619614 string characters out of 6137297
- 690044 words of memory out of 5000000
- 35644 multiletter control sequences out of 15000+600000
- 550803 words of font info for 162 fonts, out of 8000000 for 9000
+ 32221 strings out of 492970
+ 620888 string characters out of 6137297
+ 690211 words of memory out of 5000000
+ 35678 multiletter control sequences out of 15000+600000
+ 551898 words of font info for 176 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 53i,11n,87p,10440b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,87p,10440b,560s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (16 pages).
+Output written on main.pdf (20 pages).

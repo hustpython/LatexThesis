@@ -14,7 +14,73 @@
 
 3，latex preview 代码跳转快捷:ctrl + 双击。
 
-使用ctex模板来支持中文显示。
+4，由于使用了参考文献，使用混合编译方式。具体设置如下:
+   
+   ```css
+
+  
+    "latex-workshop.latex.tools": [
+      {
+          "name": "latexmk",
+          "command": "latexmk",
+          "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-pdf",
+              "%DOC%"
+          ]
+      },
+      {
+          "name": "xelatex",
+          "command": "xelatex",
+          "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "%DOC%"
+          ]
+      },
+      {
+          "name": "bibtex",
+          "command": "bibtex",
+          "args": [
+              "%DOCFILE%"
+          ]
+      },
+      {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+    },
+    {
+        "name": "xelatex",
+        "command": "xelatex",
+        "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+      {
+          "name": "xelatex -> bibtex -> xelatex*2",
+          "tools": [
+              "xelatex",
+              "bibtex",
+              "xelatex",
+              "xelatex"
+          ]
+      }
+  ],
+   ```
 
 ## 模板使用说明
 
@@ -48,3 +114,17 @@
 - [第四章 data\chapter4.tex](data/chapter4.tex)
 
 - [第五章 data\chapter5.tex](data/chapter5.tex)
+
+### 致谢
+
+- [致谢 data\acknowledgement.tex](data/acknowledgement.tex)
+
+### 参考文献 
+
+- [参考文献tex data\refs.tex](data/refs.tex)
+
+- [参考文献bib data\refs.bib](data/refs.bib)
+
+### 代码附录 
+
+- [代码 data\appendixcode.tex](data\appendixcode.tex)
