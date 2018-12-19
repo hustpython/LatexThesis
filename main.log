@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  18 DEC 2018 22:43
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.12.14)  19 DEC 2018 14:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2723,7 +2723,7 @@ LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.52061> not available
 )) [14
 
 
-]
+] [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
  (./main.aux (./data/cover.aux) (./data/encover.aux) (./data/statement.aux) (./data/cnabstract.aux) (./data/enabstract.aux) (./data/chapter1.aux) (./data/chapter2.aux) (./data/chapter3.aux) (./data/chapter4.aux) (./data/chapter5.aux) (./data/acknowledgement.aux) (./data/refs.aux) (./data/appendices.aux))
@@ -2746,12 +2746,12 @@ runsystem(del main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37688 strings out of 492970
- 721053 string characters out of 6137297
- 859639 words of memory out of 5000000
- 41002 multiletter control sequences out of 15000+600000
- 553464 words of font info for 186 fonts, out of 8000000 for 9000
+ 37699 strings out of 492970
+ 721233 string characters out of 6137297
+ 859676 words of memory out of 5000000
+ 41010 multiletter control sequences out of 15000+600000
+ 554498 words of font info for 192 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,12n,87p,10426b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (22 pages).
+Output written on main.pdf (23 pages).
